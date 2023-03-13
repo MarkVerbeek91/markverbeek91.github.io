@@ -1,0 +1,4 @@
+[tool.codespell]
+skip = '*.po,*.ts'
+count = ''
+quiet-level = 3
