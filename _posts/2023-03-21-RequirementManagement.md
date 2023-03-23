@@ -1,10 +1,10 @@
 ---
-title: Rowing Robot
+title: Requirement Engineering
 author: Mark Verbeek
-date: 2023-03-10 08:30:00 +/-0800
-categories: [Robotics, Programming]
-tags: [robot, embedded, python, rust, c++/c]
-pin: true
+date: 2023-03-23 08:30:00 +/-0800
+categories: [Programming, Requirements]
+tags: [engineering, management, tooling, planning]
+pin: false
 mermaid: true
 ---
 
