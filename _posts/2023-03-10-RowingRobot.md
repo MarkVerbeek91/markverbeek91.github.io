@@ -103,3 +103,83 @@ Assembly of all PCBs, motors, sensors and wires.
 - OpenFOAM
 - Blender Renders
 - MachineLearning (Reinforced Learning)
+
+# Phases for Reinforced Learning
+
+## Simple mechanics
+
+- Environment with mechanics to convert join angles to position of blade.
+- Reward based on distance covered.
+- Catching water is simply moving the blade underwater.
+
+## Kinematics
+
+- Environment has notion of speed and total mass of boat+rower.
+- Angle joint and torque per joint, results in force
+- Penalty for using power.
+- Total amount of power available.
+- Reward for completing distance with max 2k (or 500 meter)
+- Reward for high speed.
+
+## Advanced kinematics
+
+- Mass split into individual parts with own velocity.
+  - Boat
+  - Lower leg
+  - Upper leg
+  - Body+head
+  - Upper arm
+  - Lower arm
+
+## Water interaction
+
+- Blade gets a physical dimension, surface underwater affects efficiency
+
+Note: possible side project for openFOAM. Blade+water interaction.
+
+## Multiple agents (side view)
+
+- assuming sculling boats
+- 2 individual agents in a boat (double)
+- 4 individual agents in a boat (quad)
+- competing boats for evolution
+
+## Multiple agents (top view)
+
+- assuming sweeping boats
+- 2 individual agent in a boat (2-)
+- 4 individual agent in a boat (4-)
+- 8 individual agent in a boat (8+), heavier boat due to cox
+- add heading calculation, possible steering
+- variation: agent learn from each other
+
+## Simple mechanics in 3D
+
+- Switch to 3D environment
+- Mechanics left and right independent (mostly)
+- Add joints for shoulders
+- Add joints for hip
+- heading calculation
+
+## Kinematics in 3D
+
+- same as Kinematics as before
+
+## Advanced kinematics in 3D
+
+- body parts get volume
+- body parts can collide
+
+## Water interaction in 3D
+
+- All configurable parameters for rowing in model
+  - Oar length, inter/outer
+  - rowlock placement and angles
+  - Placement of rower in respect to rowlock
+
+## Multiple agents in 3D
+
+- Single sculls competing
+- Doubles, pair
+- Quad, coxless four
+- Eight.
