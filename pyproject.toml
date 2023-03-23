@@ -2,3 +2,4 @@
 skip = '*.po,*.ts'
 count = ''
 quiet-level = 3
+ignore-words-list = "rouge"
