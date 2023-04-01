@@ -1,8 +1,8 @@
 ---
-title: Rowing Robot
+title: Next Level Hobby's
 author: Mark Verbeek
 layout: post
-date: 2023-03-10 08:30:00 +/-0800
+date: 2023-04-01 08:30:00 +/-0800
 categories: [Robotics, Programming]
 tags: [robot, embedded, python, rust, c++/c]
 pin: true
