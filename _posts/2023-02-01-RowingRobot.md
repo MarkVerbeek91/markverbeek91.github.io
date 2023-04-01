@@ -1,6 +1,7 @@
 ---
 title: Rowing Robot
-author: Mark Vebreek
+author: Mark Verbeek
+layout: post
 date: 2023-03-10 08:30:00 +/-0800
 categories: [Robotics, Programming]
 tags: [robot, embedded, python, rust, c++/c]
@@ -42,15 +43,24 @@ Overview of involved hardware components:
 
 Collections of parts, motors, electronics and power source.
 
+- FreeCAD to design the robot
+- Steppenmotor or torque controlled motors
+- PCB design with KiCAD
+- Rechargeable battery from E-bike or power drill
+
 ### The boat
 
 Assembly of a hull, riggers, ors, etc.
 
-OpenFOAM can be used to simulator the behaviour of the board and blades in the water.
+- Design in FreeCAD
+- OpenFOAM can be used to simulator the behaviour of the board and blades in the water.
 
 ### Test rig
 
 Of course, we need to test.
+
+- Design in FreeCAD
+- build with 3D printer
 
 ## Software components
 
@@ -60,11 +70,28 @@ Overview of involved software components
 
 Controller for the robot, like running on some embedded board.
 
-### Machine Learning
+- grblHAL (like) embedded software on real time board.
+- Raspbarry pi or alike for control loop
 
-For the robot brain to know how to row, it needs to be trained.
+#### Based in First Pricibles
 
-Another option is to derive a motion based on first principles. This can be done, and might be a valid solution. A comparison could be made here.
+To derive a motion based on first principles. This can be done, and might be a valid solution. A comparison could be made here.
+
+- Knowing the mass of the boat
+- Knowing the mass of the rower
+- Knowing the geometry of the rower
+- Knowing the geometry of the boat
+- Knowing the torque on each joint
+
+The force of the blade on the water can be computed.
+
+A rough estimate can be made about how much force the blade can excert on the water. It's possible to revert the equestion and a optimilisation can be done on the torques of each joint for the length of the stroke. Till a optimal has been found.
+
+#### Machine Learning
+
+The last step above might be a very difficult one. Reversing the equations and optimize the inputs.
+
+In computer science another method exist to work with these kind of challenges. The field of Machine Learning and then specific the one for Machine Learning.
 
 ### Hardware testing (simulation, digital twin)
 

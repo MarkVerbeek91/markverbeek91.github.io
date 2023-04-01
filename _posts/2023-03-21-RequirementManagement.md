@@ -1,6 +1,7 @@
 ---
 title: Requirement Engineering
 author: Mark Verbeek
+layout: post
 date: 2023-03-23 08:30:00 +/-0800
 categories: [Programming, Requirements]
 tags: [engineering, management, tooling, planning]
@@ -57,3 +58,29 @@ TODO:
 
 - can use NiceGUI to 100% implement in python, local app
 - Javascript frond end, django backend (standard approach)
+
+## Process of creating a Product Specification
+
+- start with the goal. What is the wish, and what is the rationale for this wish.
+
+  - I want a tree hut, because I want to play outside.
+
+- Then list the requirements
+
+  - The tree hut shall have a floor
+  - The tree hut shall have a roof
+  - The tree hut shall be place in a tree
+  - The tree hut shall be placed 2 meters above the ground
+  - etc.
+
+- Each of these requirements can be either be broken down in to more requirements or to a design decision.
+
+  - The tree hut shall have a floor
+     - The floor shall be able to hold 3 children, aka 150 kg.
+     - The floor shall be made of a cheap material, max €50
+
+  - The tree hut shall be place in a tree
+    - It is decided that the tree hut is build in the tree in the back garden.
+    - Rationale: this object is a tree, and it's close by.
+
+From there the tree (no pun intended) for requirements goes on. Breaking down each object till each requirement has a design decision.
