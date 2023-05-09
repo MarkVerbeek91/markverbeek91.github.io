@@ -48,6 +48,19 @@ Collections of parts, motors, electronics and power source.
 - PCB design with KiCAD
 - Rechargeable battery from E-bike or power drill
 
+#### Design
+
+Altough FreeCAD seem not to be the most feature rich editor, with plug-ins is so far enough for a simple design. 
+
+The intend is to model to following components:
+
+- The legs 
+- The hip
+- The body
+- The shoulders
+- The arms
+- The hands
+
 ### The boat
 
 Assembly of a hull, riggers, ors, etc.
@@ -113,23 +126,11 @@ Hardware board selections, STM series?
 
 ### PCB
 
-Controller board
+Controller board.
 
 ### Electric plan
 
 Assembly of all PCBs, motors, sensors and wires.
-
-# Future plans, and etc
-
-## Draft notes, possible chapters
-
-- 1:10 scale.
-- FreeCAD
-- KiCAD
-- Digital Twin
-- OpenFOAM
-- Blender Renders
-- MachineLearning (Reinforced Learning)
 
 # Phases for Reinforced Learning
 
@@ -210,3 +211,31 @@ Note: possible side project for openFOAM. Blade+water interaction.
 - Doubles, pair
 - Quad, coxless four
 - Eight.
+
+# The Workflow
+
+Here a description is given on how all component descriped above are combined and verified together. 
+
+```mermaid
+flowchart LR
+
+  Geo(Geometry) -->|model for| B(RL agent)
+  B -->|computes movement| C(Reward)
+  C -->|input| B
+  B -->|model| D(controller)
+  D -->|controls| E(Robot)
+  E -->|specifies| Geo
+  Geo -->|specifies| Physics(Physisc Sim)
+```
+
+# Future plans, and etc
+
+## Draft notes, possible chapters
+
+- 1:10 scale.
+- FreeCAD
+- KiCAD
+- Digital Twin
+- OpenFOAM
+- Blender Renders
+- MachineLearning (Reinforced Learning)
