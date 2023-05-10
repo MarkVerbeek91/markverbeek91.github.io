@@ -8,7 +8,7 @@ Hi, my name is Mark.
 
 I'm a Software Engineer with an education in physics. I have an interest in a long list of topics.
 
-This is my (work in progress) blog/project website to showcase and keep progress of my current projects.
+This is my (work in progress) blog/project website to showcase and keep track of progress of my projects.
 
 My education background is physics and nuclear fusion technology. Through these studies I have learned a great deal about dissecting large and complex challenges in to smaller and achievable goals.
 

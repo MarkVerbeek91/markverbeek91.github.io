@@ -50,11 +50,11 @@ Collections of parts, motors, electronics and power source.
 
 #### Design
 
-Altough FreeCAD seem not to be the most feature rich editor, with plug-ins is so far enough for a simple design. 
+Although FreeCAD seem not to be the most feature rich editor, with plug-ins is so far enough for a simple design.
 
-The intend is to model to following components:
+The intent is to model to following components:
 
-- The legs 
+- The legs
 - The hip
 - The body
 - The shoulders
@@ -214,7 +214,7 @@ Note: possible side project for openFOAM. Blade+water interaction.
 
 # The Workflow
 
-Here a description is given on how all component descriped above are combined and verified together. 
+Here is a description on how all component described above are combined and verified together.
 
 ```mermaid
 flowchart LR
