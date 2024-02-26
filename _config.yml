@@ -32,20 +32,13 @@ url: 'https://markverbeek91.github.io'
 github:
   username: markverbeek91
 
-#twitter:
-#  username: twitter_username            # change to your twitter username
-
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Mark Verbeek
   email: mark.verbeek91+github@gmail.com
   links:
-    # The first element serves as the copyright owner's link
-    # - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/markverbeek91       # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
+    - https://github.com/markverbeek91
     - https://www.linkedin.com/in/mark-verbeek-67580085
 
 google_site_verification:               # fill in to your verification string
